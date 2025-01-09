@@ -19,9 +19,6 @@ class Gradients extends Controller
             ->orderBy('gradient_name')
             ->get();
 
-        info('json_encode($data)');
-        info(json_encode($data));
-
         return response()->json(['data' => $data]);
     }
 
